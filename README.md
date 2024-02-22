@@ -1,62 +1,75 @@
-# ERPNext Whitelabel
+<p align="center">
+<img src="https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png" alt="Project Logo">
+</p>
 
-This app has the following features:
+<h1 align="center">
+Empress Whitelabel: The Ultimate Customization Power For Your Workspace
+</h1>
 
-- Change App logo
-- Change Favicon
-- Change Splash Image
-- Hide Help Menu
-- Hide "powered by" text from the website
-- Remove welcome page
-- Update welcome blog post
-- Adjust App logo size from Whitelabel setting page
-- Update onboard steps to remove video and documentation link (Version 13)
-- Manage Navbar Background color from Whitelabel setting
-- Manage Custom Navbar Title and CSS for title from Whitelabel setting
-- Change Login Page Title from Whitelabel Setting Page (https://github.com/bhavesh95863/whitelabel/issues/7)
+<p align="center">
+A dynamic tool for personalizing your Empress workspace to enhance brand identity and user experience.
+<br />
+<a href="https://grow.empress.eco/">Explore the Docs</a>
+·
+<a href="https://github.com/empress-eco/whitelabel/issues">Report a Bug</a>
+·
+<a href="https://github.com/empress-eco/whitelabel/issues">Request a Feature</a>
+</p>
 
+## About The Project
 
+Empress Whitelabel is a powerful tool developed for businesses that utilize Empress and wish to customize their workspace to mirror their branding and user preferences. This tool not only enhances your brand identity but also provides a unique experience for your users. 
 
-Whitelabel Setting Page
-![image](https://user-images.githubusercontent.com/34086262/115605632-5e28ed00-a300-11eb-986d-5114ef128de3.png)
+### Key Features
 
-Custom Navbar Title
-![image](https://user-images.githubusercontent.com/34086262/115721516-bc56de00-a39b-11eb-94b3-787b0481fb60.png)
+- Customize App Logo, Favicon, and Splash Image
+- Manage Navigation Bar's Background Color and Title
+- Update Onboard Steps (Version 13)
+- Hide Help Menu and "Powered by" Text
+- Customize Login Page Title
+- Disable New Updates Popup
 
-Below are important settings in the Whitelabel setting page:
+## Technical Stack and Setup Instructions
 
-1. Ignore Onboard Whitelabel:
-   - If this setting value is true, then this app will not whitelabel onboarding steps and onboarding modules.
+Empress Whitelabel is built on the robust and reliable Empress framework.
 
-2. Show help menu:
-   - By default, this app hides the help menu. This setting shows the help menu if the value of this setting is true.
+**Prerequisites:** You need to have Empress installed on your server.
 
-3. Disable New Update Popup:
-   - If this setting value is true, then it will disable the new updates popup.
+**Installation:**
 
+```sh
+# Clone the repository
+bench get-app https://github.com/empress-eco/whitelabel.git
 
-## Installation Steps:
+# Install the app for a specific site
+bench --site your_site_name install-app whitelabel
 
-1. Clone the repository:
-   bench get-app https://github.com/bhavesh95863/whitelabel
+# Migrate the database
+bench --site your_site_name migrate
 
-3. Install the app for a specific site:
-   bench --site sitename install-app whitelabel
+# Restart the bench
+bench restart
 
-3. Migrate the database:
-   bench  --site site_name migrate
+# Clear the cache
+bench clear-cache
+```
 
-4. Restart the bench:
-   bench restart
+## Usage
 
-5. Clear the cache:
-   bench clear-cache
+After installation, navigate to the Whitelabel settings page to start customizing your workspace. You can adjust the App logo size, manage the Navigation Bar, update the welcome blog post, and more.
 
+## Contribution Guidelines
 
-## Contributing
-Contributions to the whitelable module are welcome! If you have ideas for improvements or new features, feel free to submit a pull request or open an issue on our GitHub repository.
+We welcome your contributions! Here's how you can contribute:
 
-## License
-This project is licensed under the MIT License.
+- Fork the Project
+- Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+- Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+- Push to the Branch (`git push origin feature/AmazingFeature`)
+- Open a Pull Request
 
+## License and Acknowledgments
 
+This project is under the MIT License. Your contributions are also licensed under the same.
+
+A special thanks to the Empress Community, the original architects behind the foundational tools that power this project. Their innovation and dedication have been instrumental to our work and we are profoundly grateful for their pioneering efforts and ongoing support.
